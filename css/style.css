@@ -162,60 +162,6 @@
 		{
 		}
 
-	form
-	{
-	}
-	
-		form input.text,
-		form select,
-		form textarea
-		{
-			border: 0;
-			background: #f0f0f0;
-			padding: 0.65em;
-			width: 100%;
-		}
-
-		form input.button,
-		form input.text,
-		form select,
-		form textarea
-		{
-			-webkit-appearance: none;
-		}
-		
-		form textarea
-		{
-			height: 15em;
-		}
-		
-		form input:focus,
-		form select:focus,
-		form textarea:focus
-		{
-			background: #f5f5f5;
-		}
-
-		form ::-webkit-input-placeholder
-		{
-			color: #999;
-		}
-
-		form :-moz-placeholder
-		{
-			color: #999;
-		}
-
-		form ::-moz-placeholder
-		{
-			color: #999;
-		}
-
-		form :-ms-input-placeholder
-		{
-			color: #999;
-		}		
-
 	br.clear
 	{
 		clear: both;
