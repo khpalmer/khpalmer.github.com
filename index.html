@@ -10,10 +10,14 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="clarinet, music education" />
-		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet" />
+		<meta name="author" content="Katherine H. Palmer">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+		<!--<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet" /> -->
 
 		<script src="js/jquery-1.10.2.min.js"></script>
 		<script src="js/lightbox-2.6.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
 
 		<script src="js/jquery.min.js"></script>
 		<script src="js/config.js"></script>
@@ -24,6 +28,8 @@
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
 			<link rel="stylesheet" href="css/noscript.css" />
+
+			<link rel="stylesheet" href="css/screen.css" media="screen"/>
 			<link rel="stylesheet" href="css/lightbox.css" />
 		</noscript>
 
@@ -32,11 +38,13 @@
         .clear { clear: both; }
         #page-wrap { width: 800px; margin: 40px auto 60px; }
         #pic { float: right; margin: -30px 0 0 0; }
-        h4 span { font-weight: normal; font-size: 0.8em; }
-        h5 span { font-weight: normal; font-size: 0.75em; }
-        dt { font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 50px; border-right: 1px solid #999;  }
+        h4 span { color: #777777; font-size: 0.8em; padding-left:2em }
+        h5 span { color: #777777; font-size: 0.75em; padding-left:2em}
+        dt { font-weight: bold; font-size: 14px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 50px; border-right: 1px solid #999;  }
         dd { width: 600px; float: right; }
         dd.clear { float: none; margin: 0; height: 15px; }
+        ul { margin: 0 0 0 2em; }
+
      </style>
 
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
@@ -53,7 +61,7 @@
 						<a href="#cv" class="fa fa-file-text-o"><span>Resume</span></a>
 						<!--<a href="#education" class="fa fa-pencil-square-o"><span>Education</span></a>-->
 						<a href="#audio" class="fa fa-music"><span>Recordings</span></a>
-						<!--<a href="#gallery" class="fa fa-film"><span>Gallery</span></a>-->
+						<a href="#gallery" class="fa fa-film"><span>Gallery</span></a>
 						<a href="#contact" class="fa fa-envelope"><span>Contact Info</span></a>
 						<a href="http://www.linkedin.com/pub/katherine-palmer/14/351/625" target="_blank" class="fa fa-linkedin-square"><span>LinkedIn</span></a>
 					</nav>
@@ -79,7 +87,7 @@
 									<h2>About Me</h2>
 								</header>
 								<p>
-									Dr. Katherine Palmer is currently the Museum Educator at the Musical Instrument Museum in Phoenix, Arizona where she is in charge of developing and teaching educational programs. Katherine earned a Doctorate of Musical Arts (clarinet) and a Master of Arts (ethnomusicology) from <a href="http://asu.edu" target="_blank">Arizona State University</a>. Her master's thesis focused on the Venezuelan music education program (El Sistema), identity formation, and nationalism; her doctoral research was centered on the Peruvian composer, Armando Guevara Ochoa, and his works for wind instruments. Committed to research and performance, Katherine has presented papers, presentations, and performances throughout the United States. Additionally, she has performed in Russia, Japan, Belgium, Italy, Argentina, Peru, and Tanzania.
+									Dr. Katherine Palmer is currently the Museum Educator at the Musical Instrument Museum in Phoenix, Arizona where she is in charge of developing and teaching educational programs. Katherine earned a Doctorate of Musical Arts (clarinet) and a Master of Arts (ethnomusicology) from <a href="http://asu.edu" target="_blank">Arizona State University</a>. Her master's thesis focused on the Venezuelan music education program (<i>El Sistema</i>), identity formation, and nationalism; her doctoral research was centered on the Peruvian composer, Armando Guevara Ochoa, and his works for wind instruments. Committed to research and performance, Katherine has presented papers, presentations, and performances throughout the United States. Additionally, she has performed in Russia, Japan, Belgium, Italy, Argentina, Peru, and Tanzania.
 									 <br>
 									 <br>
 									An active performing musician in the Phoenix area, Katherine is an adjunct instructor of music humanities at Maricopa Community Colleges, teaches early childhood music and movement courses at local preschools, runs clarinet sectionals for local high schools, and maintains a private woodwind studio. Katherine is the Assistant Director for Clarinets for Conservation, a non-profit organization that provides music and conservation education in Moshi, Tanzania during the summer months to primary and secondary students. She completed her undergraduate studies at the <a href="http://miami.edu" target="_blank">University of Miami (FL)</a> in clarinet performance with a minor in anthropology and a Masters of Music in clarinet performance at ASU.								
@@ -97,8 +105,8 @@
 				        <div id="contact-info" class="vcard">
 				            <h2>Katherine Palmer, D.M.A</h2>
 				            <p>
-				                <span class="tel">772.349.1860</span><br />
-				                <a class="email" href="mailto:k.hurst.palmer@gmail.com">k.hurst.palmer@gmail.com</a>
+				                <a class="email" href="mailto:k.hurst.palmer@gmail.com">k.hurst.palmer@gmail.com</a><br />
+				                <span class="tel">772.349.1860</span>
 				            </p>
 				            <p><b>View my complete CV <a href="Palmer_CV.pdf" target="_blank">here</a></b></p>
 				        </div>
@@ -108,12 +116,12 @@
 				            
 				            <dt>Skills</dt>
 				            <dd>
-				                <h5>Clarinet<br>
+				                <p>Clarinet<br>
 				                Woodwinds<br>
 				                World Music<br>
 				                Early Childhood<br>
 				                Music Education<br>
-				                Arts Organizations and Outreach</h5>
+				                Arts Organizations and Outreach</p>
 				            </dd>				        
 
 				            <dd class="clear"></dd>
@@ -122,12 +130,12 @@
 				            <dd>
 				                <h4>Doctorate of Musical Arts, Arizona State University, 2013<br>
 				                <span> "Biographical Sketch and Selected Works of Armando Guevara Ochoa"</span></h4>
-
+									<br>
 				                <h4>Master of Arts in Ethnomusicology, Arizona State University, 2013<br>
 				                <span> "Social Reform through Music Education and the Establishment of a National Identity in Venezuela"</span></h4>
-
+									<br>
 				                <h4>Master of Music in Clarinet, Arizona State University, 2009<br></h4>
-
+				                	<br>
 				                <h4>Bachelor of Music in Clarinet, University of Miami (FL), 2007<br>
 				                <span> Minor in anthropology</span></h4>
 				            </dd>
@@ -136,7 +144,8 @@
 				            
 				            <dt>Selected Professional Experience</dt>
 				            <dd>
-				                <h4>Museum Educator <span>Musical Instrument Museum (2012 - present)</span></h4>
+				                <h4>Musical Instrument Museum (2012 - present), 
+				                	Museum Educator</h4>
 				                <h5>Museum Educator (2013-present)<span>
 				                <ul>
 				                    <li>&bull; Create, implement, and teach sustainable museum programs for youth and adults</li>
@@ -149,7 +158,8 @@
 				                    <li>&bull; Assist curators with research and development of exhibits</li>
 				                </ul></span></h5>
 
-				                <h4>Adjunct Instructor of Music Humanities <span>Maricopa Community Colleges (2011 - present)</span></h4>
+				                <h4>Maricopa Community Colleges (2011 - present), 
+				                	Adjunct Instructor of Music Humanities</h4>
 				                <h5>Paradise Valley Community College<span>
 				                <ul>
 				                    <li>&bull; Music History and Literature (MHL) 143: Music in World Cultures (Online): Non-European musical traditions including the study of music in rituals, musical instruments, and the impace of cultures on musical styles. Developed this course in an online format that adheres to the Quality Matters rubric</li>
@@ -161,7 +171,8 @@
 				                    <li>&bull; MHL153: Rock Music and Culture: History of rock music including how cultural, social, political, and economic conditions have shaped its evolution</li>
 				                </ul></span></h5>
 
-				                <h4>Clarinetist <span>Teacher, Guest Artist, and Clinician (2003 - present)</span></h4>
+				                <h4>Teacher, Guest Artist, and Clinician (2003 - present), 
+				                	Clarinetist</h4>
 				                <h5>Phoenix Area (2007-present), South Florida area (2003-2007)<span>
 				                <ul>
 				                    <li>&bull; Woodwind students ranging from beginners to adults</li>
@@ -180,7 +191,8 @@
 				                    <li>&bull; University of Miami, Coral Gables, FL</li>
 				                </ul></span></h5>
 
-				                <h4>Teaching Assistant <span>Arizona State University (2009 - 2013)</span></h4>
+				                <h4>Arizona State University (2009 - 2013), 
+				                	Teaching Assistant</h4>
 				                <h5>MHL140: Music as Culture: World Musics in Context<span>
 				                <ul>
 				                    <li>&bull; Assist in teaching and grading term papers, exams, and performance presentations</li>
@@ -379,7 +391,20 @@
 									<h2>Gallery</h2>
 								</header>
 								<p>
-									Under Construction
+									<section id="examples" class="section examples-section">
+
+		<div class="image-row">
+			<div class="image-set">
+				
+				<a class="example-image-link" href="images/WebsitePhotos/20060711_0003.jpg" data-lightbox="example-set">
+					<image class="example-image" src="images/WebsitePhotos/20060711_0003.jpg" width="45%" height="45%"/></a>
+				<a class="example-image-link" href="images/WebsitePhotos/20060712_0022.jpg" data-lightbox="example-set">
+					<image class="example-image" src="images/WebsitePhotos/20060712_0022.jpg" width="45%" height="45%"/></a>
+				<a class="example-image-link" href="images/WebsitePhotos/1016254_653388231357460_1660036759_n-1.jpg" data-lightbox="example-set">
+					<image class="example-image" src="images/WebsitePhotos/1016254_653388231357460_1660036759_n-1.jpg" width="45%" height="45%"/></a>
+			</div>
+		</div>
+	</section>
 								</p>
 							</article>
 
