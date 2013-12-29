@@ -86,12 +86,26 @@
 		color: #363636;
 	}
 
-	h4, h5, h6
+	h4
 	{
-		font-weight: normal;
+		font-weight: 400;
 		color: #363636;
+		margin: 1.5em 0 0 0;
 	}
-	
+
+	h4top
+	{
+		font-weight: 400;
+		color: #363636;
+		margin: 0 0 0 0;
+	}
+
+	h5
+	{
+		font-weight: 400;
+		color: #363636;
+		margin: 0.25em 0 0 0.75em;
+	}
 	
 	blockquote
 	{
